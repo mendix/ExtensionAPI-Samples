@@ -1,0 +1,17 @@
+bin
+obj
+*.user
+*.suo
+reports
+_ReSharper*
+/packages
+*.tokens
+*.bak
+TestResults/*
+*.back.aip
+log/
+.vs/*
+.idea/
+launchSettings.json
+*.iml
+nuget-env.config

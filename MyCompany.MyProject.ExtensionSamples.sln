@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCompany.MyProject.BasicTutorialExtension", "tutorial_basics\MyCompany.MyProject.BasicTutorialExtension.csproj", "{728B4963-D7F5-4190-A84C-7976D90FABD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCompany.MyProject.ContextMenuExtension", "tutorial_contextMenus\MyCompany.MyProject.ContextMenuExtension.csproj", "{158BC435-F0E6-4731-B7B1-FCC925BB4E5C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCompany.MyProject.DockablePaneExtension", "tutorial_dockablePanes\MyCompany.MyProject.DockablePaneExtension.csproj", "{FD7A4B1D-902C-4023-9457-5AF02BAD3288}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCompany.MyProject.MenusExtension", "tutorial_menus\MyCompany.MyProject.MenusExtension.csproj", "{FF59BED9-A78D-4D17-871F-C6A08245BEA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCompany.MyProject.ModalWebViewExtension", "tutorial_modalWebviewDialogs\MyCompany.MyProject.ModalWebViewExtension.csproj", "{05D6A2B5-2835-4E0C-AA7D-741962DF008F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCompany.MyProject.MicroflowsExtension", "tutorial_microflows\MyCompany.MyProject.MicroflowsExtension.csproj", "{0358D1FA-3F82-4A4B-A949-23344F9CA9F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{728B4963-D7F5-4190-A84C-7976D90FABD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{728B4963-D7F5-4190-A84C-7976D90FABD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{728B4963-D7F5-4190-A84C-7976D90FABD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{728B4963-D7F5-4190-A84C-7976D90FABD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{158BC435-F0E6-4731-B7B1-FCC925BB4E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{158BC435-F0E6-4731-B7B1-FCC925BB4E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{158BC435-F0E6-4731-B7B1-FCC925BB4E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{158BC435-F0E6-4731-B7B1-FCC925BB4E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD7A4B1D-902C-4023-9457-5AF02BAD3288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD7A4B1D-902C-4023-9457-5AF02BAD3288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD7A4B1D-902C-4023-9457-5AF02BAD3288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD7A4B1D-902C-4023-9457-5AF02BAD3288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF59BED9-A78D-4D17-871F-C6A08245BEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF59BED9-A78D-4D17-871F-C6A08245BEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF59BED9-A78D-4D17-871F-C6A08245BEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF59BED9-A78D-4D17-871F-C6A08245BEA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D6A2B5-2835-4E0C-AA7D-741962DF008F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D6A2B5-2835-4E0C-AA7D-741962DF008F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D6A2B5-2835-4E0C-AA7D-741962DF008F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D6A2B5-2835-4E0C-AA7D-741962DF008F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0358D1FA-3F82-4A4B-A949-23344F9CA9F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0358D1FA-3F82-4A4B-A949-23344F9CA9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0358D1FA-3F82-4A4B-A949-23344F9CA9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0358D1FA-3F82-4A4B-A949-23344F9CA9F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9CA50BF-E8FC-4E86-B931-097E919A47F3}
+	EndGlobalSection
+EndGlobal
