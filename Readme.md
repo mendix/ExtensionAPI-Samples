@@ -11,4 +11,4 @@ Within this repository you can find a collection of samples that show some of th
 - Tutorial Microflows: How to create and manipulate microflows
 - Tutorial Modal WebView Dialogs: How to create a Modal Webview dialog
 
-You can also vuew our api [reference documentation](./API%20Reference/Mendix.StudioPro.ExtensionsAPI.md)
+You can also view our api [reference documentation](./API%20Reference/Mendix.StudioPro.ExtensionsAPI.md)
