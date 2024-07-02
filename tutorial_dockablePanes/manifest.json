@@ -1,1 +1,1 @@
-﻿{ "mx_extensions": [ "MyCompany.MyProject.MendixExtension.dll" ] }
+﻿{ "mx_extensions": [ "MyCompany.MyProject.DockablePaneExtension.dll" ] }
