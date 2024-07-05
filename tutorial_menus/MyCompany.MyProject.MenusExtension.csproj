@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-	<PackageReference Include="Mendix.StudioPro.ExtensionsAPI" Version="10.12.38909" />
+    <PackageReference Include="Mendix.StudioPro.ExtensionsAPI" Version="10.12.0" />
   </ItemGroup>
 	
   <ItemGroup>
