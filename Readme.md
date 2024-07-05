@@ -7,7 +7,7 @@ To learn more about Mendix Studio Pro Extensibility, check out the [official doc
 
 You can also view the [API reference documentation](./API%20Reference/Mendix.StudioPro.ExtensionsAPI.md).
 
-## Tutorials
+## Samples
 Within this repository you can find a collection of samples that show some of the most common use cases for extensions in Studio Pro.
 
 - [Basics](./tutorial_basics): A basic Hello World extension
