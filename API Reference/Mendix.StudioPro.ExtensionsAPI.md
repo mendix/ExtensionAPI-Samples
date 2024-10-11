@@ -35,6 +35,7 @@
 
 | public type | description |
 | --- | --- |
+| struct [Dimensions](./Mendix.StudioPro.ExtensionsAPI.Model/Dimensions.md) | This record represents the HxW dimensions of an object. |
 | interface [IAbstractUnit](./Mendix.StudioPro.ExtensionsAPI.Model/IAbstractUnit.md) | Representation of a single [unit](https://docs.mendix.com/apidocs-mxsdk/mxsdk/understanding-the-metamodel#1-units) in metamodel. This is an abstract unit, so all instances of [`IAbstractUnit`](./Mendix.StudioPro.ExtensionsAPI.Model/IAbstractUnit.md) implement more concrete interface like [`IFolder`](./Mendix.StudioPro.ExtensionsAPI.Model.Projects/IFolder.md). |
 | interface [IElement](./Mendix.StudioPro.ExtensionsAPI.Model/IElement.md) | Representation of a single [element](https://docs.mendix.com/apidocs-mxsdk/mxsdk/understanding-the-metamodel#2-elements) in metamodel. This is an abstract element, so all instances of [`IElement`](./Mendix.StudioPro.ExtensionsAPI.Model/IElement.md) also implement more concrete interface like [`IMicroflow`](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IMicroflow.md). |
 | interface [IModel](./Mendix.StudioPro.ExtensionsAPI.Model/IModel.md) | Representation of Mendix app loaded in Studio Pro in terms of [Mendix Metamodel](https://docs.mendix.com/apidocs-mxsdk/mxsdk/understanding-the-metamodel). |
@@ -146,15 +147,43 @@
 
 | public type | description |
 | --- | --- |
+| class [AggregateListFunction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/AggregateListFunction.md) | This allows to create a function for an [`IAggregateListAction`](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IAggregateListAction.md). It can have different behaviors. It can use an [`IMicroflowExpression`](./Mendix.StudioPro.ExtensionsAPI.Model.MicroflowExpressions/IMicroflowExpression.md) to generate its result, or it can use an [`IAttribute`](./Mendix.StudioPro.ExtensionsAPI.Model.DomainModels/IAttribute.md) to do so. Or it can instead be an aggregate list that performs a [`ReduceListFunction`](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/AggregateListFunction/ReduceListFunction.md) on the list. All of these parameters are optional. For more information see the official Studio Pro documentation at https://docs.mendix.com/refguide/aggregate-list. To create this function for different scenarios, you can use the [`IMicroflowActivitiesService`](./Mendix.StudioPro.ExtensionsAPI.Services/IMicroflowActivitiesService.md) service. It provides a series of methods to easily create different activities. |
+| class [AssociationMemberChangeType](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/AssociationMemberChangeType.md) | Used to tell the [`IActionActivity`](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IActionActivity.md) that the change should apply to the an [`IAssociation`](./Mendix.StudioPro.ExtensionsAPI.Model.DomainModels/IAssociation.md). |
+| class [AttributeMemberChangeType](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/AttributeMemberChangeType.md) | Used to tell the [`IActionActivity`](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IActionActivity.md) that the change should apply to the an [`IAttribute`](./Mendix.StudioPro.ExtensionsAPI.Model.DomainModels/IAttribute.md). |
+| record [AttributeSorting](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/AttributeSorting.md) | When creating or filtering lists through an [`IActionActivity`](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IActionActivity.md) we can choose a few [`IAttribute`](./Mendix.StudioPro.ExtensionsAPI.Model.DomainModels/IAttribute.md) to sort it by. |
+| record [DatabaseRetrieveRange](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/DatabaseRetrieveRange.md) |  |
 | interface [IActionActivity](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IActionActivity.md) |  |
 | interface [IActivity](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IActivity.md) |  |
+| interface [IAggregateListAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IAggregateListAction.md) |  |
+| interface [IAggregateListFunction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IAggregateListFunction.md) |  |
+| interface [IAssociationRetrieveSource](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IAssociationRetrieveSource.md) |  |
 | interface [IBasicCodeActionParameterValue](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IBasicCodeActionParameterValue.md) |  |
+| interface [IBinaryListOperation](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IBinaryListOperation.md) |  |
+| interface [IChangeListAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IChangeListAction.md) |  |
+| interface [IChangeMembersAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IChangeMembersAction.md) |  |
+| interface [IChangeObjectAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IChangeObjectAction.md) |  |
 | interface [ICodeActionParameterMapping](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/ICodeActionParameterMapping.md) |  |
 | interface [ICodeActionParameterValue](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/ICodeActionParameterValue.md) |  |
+| interface [ICommitAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/ICommitAction.md) |  |
+| interface [IContains](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IContains.md) |  |
+| interface [ICreateListAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/ICreateListAction.md) |  |
+| interface [ICreateObjectAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/ICreateObjectAction.md) |  |
+| interface [IDatabaseRetrieveSource](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IDatabaseRetrieveSource.md) |  |
+| interface [IDeleteAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IDeleteAction.md) |  |
 | interface [IEntityTypeCodeActionParameterValue](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IEntityTypeCodeActionParameterValue.md) |  |
 | interface [IExpressionBasedCodeActionParameterValue](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IExpressionBasedCodeActionParameterValue.md) |  |
+| interface [IFilter](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IFilter.md) |  |
+| interface [IFind](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IFind.md) |  |
+| interface [IFindByExpression](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IFindByExpression.md) |  |
+| interface [IHead](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IHead.md) |  |
+| interface [IIntersect](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IIntersect.md) |  |
 | interface [IJavaActionCallAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IJavaActionCallAction.md) |  |
 | interface [IJavaActionParameterMapping](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IJavaActionParameterMapping.md) |  |
+| interface [IListEquals](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IListEquals.md) |  |
+| interface [IListOperation](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IListOperation.md) |  |
+| interface [IListOperationAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IListOperationAction.md) |  |
+| interface [IMemberChange](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IMemberChange.md) |  |
+| interface [IMemberChangeType](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IMemberChangeType.md) | Some [`IActionActivity`](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IActionActivity.md) perform changes that can be applied to an [`IAssociation`](./Mendix.StudioPro.ExtensionsAPI.Model.DomainModels/IAssociation.md) or an [`IAttribute`](./Mendix.StudioPro.ExtensionsAPI.Model.DomainModels/IAttribute.md). Use [`AssociationMemberChangeType`](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/AssociationMemberChangeType.md) for an [`IAssociation`](./Mendix.StudioPro.ExtensionsAPI.Model.DomainModels/IAssociation.md) or use [`AttributeMemberChangeType`](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/AttributeMemberChangeType.md) for an attribute. |
 | interface [IMicroflow](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IMicroflow.md) | Representation of a single [microflow](https://docs.mendix.com/apidocs-mxsdk/mxsdk/microflows-metamodel) in a metamodel. |
 | interface [IMicroflowAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IMicroflowAction.md) |  |
 | interface [IMicroflowBase](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IMicroflowBase.md) |  |
@@ -165,11 +194,29 @@
 | interface [IMicroflowObject](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IMicroflowObject.md) |  |
 | interface [IMicroflowParameterObject](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IMicroflowParameterObject.md) |  |
 | interface [IMicroflowParameterValue](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IMicroflowParameterValue.md) |  |
+| interface [IRemovesFromScope](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IRemovesFromScope.md) |  |
+| interface [IRetrieveAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IRetrieveAction.md) |  |
+| interface [IRetrieveSource](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IRetrieveSource.md) |  |
+| interface [IRollbackAction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IRollbackAction.md) |  |
 | interface [IRule](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IRule.md) |  |
 | interface [IServerSideMicroflow](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IServerSideMicroflow.md) |  |
+| interface [ISort](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/ISort.md) |  |
 | interface [IStringTemplateParameterValue](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IStringTemplateParameterValue.md) |  |
+| interface [ISubtract](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/ISubtract.md) |  |
+| interface [ITail](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/ITail.md) |  |
+| interface [IUnion](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IUnion.md) |  |
 | interface [IVariable](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IVariable.md) |  |
 | record [MicroflowReturnValue](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/MicroflowReturnValue.md) |  |
+| class [ReduceListFunction](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/ReduceListFunction.md) |  |
+
+## Mendix.StudioPro.ExtensionsAPI.Model.Microflows.Actions namespace
+
+| public type | description |
+| --- | --- |
+| enum [AggregateFunctionEnum](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows.Actions/AggregateFunctionEnum.md) |  |
+| enum [ChangeActionItemType](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows.Actions/ChangeActionItemType.md) |  |
+| enum [ChangeListActionOperation](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows.Actions/ChangeListActionOperation.md) |  |
+| enum [CommitEnum](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows.Actions/CommitEnum.md) |  |
 
 ## Mendix.StudioPro.ExtensionsAPI.Model.Pages namespace
 
@@ -195,6 +242,7 @@
 | interface [IConfiguration](./Mendix.StudioPro.ExtensionsAPI.Model.Settings/IConfiguration.md) |  |
 | interface [IConfigurationSettings](./Mendix.StudioPro.ExtensionsAPI.Model.Settings/IConfigurationSettings.md) |  |
 | interface [IConstantValue](./Mendix.StudioPro.ExtensionsAPI.Model.Settings/IConstantValue.md) |  |
+| interface [ICustomSetting](./Mendix.StudioPro.ExtensionsAPI.Model.Settings/ICustomSetting.md) |  |
 | interface [IPrivateValue](./Mendix.StudioPro.ExtensionsAPI.Model.Settings/IPrivateValue.md) |  |
 | interface [IProjectSettings](./Mendix.StudioPro.ExtensionsAPI.Model.Settings/IProjectSettings.md) |  |
 | interface [IProjectSettingsPart](./Mendix.StudioPro.ExtensionsAPI.Model.Settings/IProjectSettingsPart.md) |  |
@@ -209,6 +257,17 @@
 | interface [IText](./Mendix.StudioPro.ExtensionsAPI.Model.Texts/IText.md) | Represents a translatable text in a Mendix app. Translatable texts are mainly used in user-facing places in the app, for example on Pages and in Microflows where the end-user of the app will see the text. |
 | interface [ITranslation](./Mendix.StudioPro.ExtensionsAPI.Model.Texts/ITranslation.md) | Represents a single translation of a translatable text. |
 
+## Mendix.StudioPro.ExtensionsAPI.Model.UntypedModel namespace
+
+| public type | description |
+| --- | --- |
+| interface [IModelElement](./Mendix.StudioPro.ExtensionsAPI.Model.UntypedModel/IModelElement.md) | Untyped model element |
+| interface [IModelProperty](./Mendix.StudioPro.ExtensionsAPI.Model.UntypedModel/IModelProperty.md) | Untyped model element's property |
+| interface [IModelRoot](./Mendix.StudioPro.ExtensionsAPI.Model.UntypedModel/IModelRoot.md) | Untyped model's root |
+| interface [IModelStructure](./Mendix.StudioPro.ExtensionsAPI.Model.UntypedModel/IModelStructure.md) | A base set of model structure's properties |
+| interface [IModelUnit](./Mendix.StudioPro.ExtensionsAPI.Model.UntypedModel/IModelUnit.md) | A model unit |
+| enum [PropertyType](./Mendix.StudioPro.ExtensionsAPI.Model.UntypedModel/PropertyType.md) | Model property types |
+
 ## Mendix.StudioPro.ExtensionsAPI.Services namespace
 
 | public type | description |
@@ -220,11 +279,13 @@
 | interface [IExtensionFileService](./Mendix.StudioPro.ExtensionsAPI.Services/IExtensionFileService.md) | Provides filesystem operations specific to an extension. |
 | interface [IHttpClientService](./Mendix.StudioPro.ExtensionsAPI.Services/IHttpClientService.md) | Provides access to the HttpClientFactory from Studio Pro, which manages the usage of the HTTP Client Handler across the application. This prevents socket allocation exhaustion, which can cause undesirable application behavior. |
 | interface [ILogService](./Mendix.StudioPro.ExtensionsAPI.Services/ILogService.md) | Provides access to the logging system of Studio Pro to log messages from extensions. Each message is by default decorated with the caller method name and the caller file path. This can be overriden in the method calls. |
+| interface [IMicroflowActivitiesService](./Mendix.StudioPro.ExtensionsAPI.Services/IMicroflowActivitiesService.md) | Provides a series of operations for creating various types of [`IActionActivity`](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IActionActivity.md) for a [`IMicroflow`](./Mendix.StudioPro.ExtensionsAPI.Model.Microflows/IMicroflow.md). |
 | interface [IMicroflowExpressionService](./Mendix.StudioPro.ExtensionsAPI.Services/IMicroflowExpressionService.md) | Provides a set of operations on a [`Microflow Expression`](./Mendix.StudioPro.ExtensionsAPI.Model.MicroflowExpressions/IMicroflowExpression.md). |
 | interface [IMicroflowService](./Mendix.StudioPro.ExtensionsAPI.Services/IMicroflowService.md) | Provides a set of operations on a Microflow. |
 | interface [INameValidationService](./Mendix.StudioPro.ExtensionsAPI.Services/INameValidationService.md) | Provides validation functionality for names of model elements. |
 | interface [INavigationManagerService](./Mendix.StudioPro.ExtensionsAPI.Services/INavigationManagerService.md) | Provides access to the navigation profiles of a Mendix app |
 | interface [IPageGenerationService](./Mendix.StudioPro.ExtensionsAPI.Services/IPageGenerationService.md) | Provides access to the page generation features of the StudioPro |
+| interface [IUntypedModelAccessService](./Mendix.StudioPro.ExtensionsAPI.Services/IUntypedModelAccessService.md) | This service provides you access to the untyped model's root, granting direct and fluent access to the model to the power-users. |
 | record [SecretManagerKey](./Mendix.StudioPro.ExtensionsAPI.Services/SecretManagerKey.md) | Represents a key for storing a secret. |
 | record [ValidationResult](./Mendix.StudioPro.ExtensionsAPI.Services/ValidationResult.md) | Validation result that is returned by the validation api. |
 
@@ -257,6 +318,7 @@
 
 | public type | description |
 | --- | --- |
+| class [ActiveDocumentChanged](./Mendix.StudioPro.ExtensionsAPI.UI.Events/ActiveDocumentChanged.md) | An event that occurs when the active document in the app has changed. |
 | class [ExtensionLoaded](./Mendix.StudioPro.ExtensionsAPI.UI.Events/ExtensionLoaded.md) | An event that occurs when an extension is loading. |
 | class [ExtensionUnloading](./Mendix.StudioPro.ExtensionsAPI.UI.Events/ExtensionUnloading.md) | An event that occurs when an extension will be unloaded. |
 | interface [IEvent](./Mendix.StudioPro.ExtensionsAPI.UI.Events/IEvent.md) | Interface for events that occur in Studio Pro. |

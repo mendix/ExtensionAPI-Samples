@@ -16,7 +16,7 @@ public struct Location : IEquatable<Location>
 | name | description |
 | --- | --- |
 | [Location](Location/Location.md)(…) | This record represents a set of two-dimensional coordinates. |
-| static [Empty](Location/Empty.md) | Create a location object with a set of default coordinates. |
+| static [Empty](Location/Empty.md) { get; } | Create a [`Location`](./Location.md) object with a set of default coordinates. |
 | [X](Location/X.md) { get; set; } | X axis coordinate. |
 | [Y](Location/Y.md) { get; set; } | Y axis coordinate. |
 

@@ -1,4 +1,4 @@
-# UIExtensionBase.Subscribe&lt;TEvent&gt; method
+# UIExtensionBase.Subscribe&lt;TEvent&gt; method (1 of 2)
 
 Subscribe to a Studio Pro event.
 
@@ -17,6 +17,22 @@ protected IEventSubscription Subscribe<TEvent>(Action onEvent)
 | exception | condition |
 | --- | --- |
 | ArgumentNullException | If the action passed is |
+
+## See Also
+
+* interface [IEventSubscription](../../Mendix.StudioPro.ExtensionsAPI.UI.Events/IEventSubscription.md)
+* interface [IEvent](../../Mendix.StudioPro.ExtensionsAPI.UI.Events/IEvent.md)
+* class [UIExtensionBase](../UIExtensionBase.md)
+* namespace [Mendix.StudioPro.ExtensionsAPI.UI](../../Mendix.StudioPro.ExtensionsAPI.md)
+
+---
+
+# UIExtensionBase.Subscribe&lt;TEvent&gt; method (2 of 2)
+
+```csharp
+protected IEventSubscription Subscribe<TEvent>(Action<TEvent> onEvent)
+    where TEvent : IEvent
+```
 
 ## See Also
 

@@ -10,9 +10,13 @@ public interface IConfiguration : IElement
 | --- | --- |
 | [Name](IConfiguration/Name.md) { get; set; } |  |
 | [AddConstantValue](IConfiguration/AddConstantValue.md)(…) |  |
+| [AddCustomSetting](IConfiguration/AddCustomSetting.md)(…) |  |
 | [GetConstantValues](IConfiguration/GetConstantValues.md)() |  |
+| [GetCustomSettings](IConfiguration/GetCustomSettings.md)() |  |
 | [InsertConstantValue](IConfiguration/InsertConstantValue.md)(…) |  |
+| [InsertCustomSetting](IConfiguration/InsertCustomSetting.md)(…) |  |
 | [RemoveConstantValue](IConfiguration/RemoveConstantValue.md)(…) |  |
+| [RemoveCustomSetting](IConfiguration/RemoveCustomSetting.md)(…) |  |
 
 ## See Also
 

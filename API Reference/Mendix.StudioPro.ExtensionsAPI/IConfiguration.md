@@ -11,6 +11,7 @@ public interface IConfiguration
 | name | description |
 | --- | --- |
 | [BuildTag](IConfiguration/BuildTag.md) { get; } | Tag uniquely identifying Studio Pro build. |
+| [CurrentLanguage](IConfiguration/CurrentLanguage.md) { get; } | The current language for the UI of Studio Pro. |
 | [EarliestSupportedLegacyMendixVersion](IConfiguration/EarliestSupportedLegacyMendixVersion.md) { get; } | Latest compatible version of Studio Pro in the semver v2 format `major.minor.patch`. |
 | [LatestSupportedLegacyMendixVersion](IConfiguration/LatestSupportedLegacyMendixVersion.md) { get; } | Latest compatible version of Studio Pro in the semver v2 format `major.minor.patch`. |
 | [MendixVersion](IConfiguration/MendixVersion.md) { get; } | Version of Studio Pro in the semver v2 format `major.minor.patch`. |

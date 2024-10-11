@@ -12,7 +12,7 @@ public abstract class UIExtensionBase : ExtensionBase
 | --- | --- |
 | [CurrentApp](UIExtensionBase/CurrentApp.md) { get; } | Currently opened app. Or `null` if no app is opened. |
 | [WebServerBaseUrl](UIExtensionBase/WebServerBaseUrl.md) { get; } | Returns the base URL for the routes added by this extension in the internal Studio Pro web server. |
-| [Subscribe&lt;TEvent&gt;](UIExtensionBase/Subscribe.md)(…) | Subscribe to a Studio Pro event. |
+| [Subscribe&lt;TEvent&gt;](UIExtensionBase/Subscribe.md)(…) | Subscribe to a Studio Pro event. (2 methods) |
 | [Unsubscribe](UIExtensionBase/Unsubscribe.md)(…) | Unsubscribe from a Studio Pro event. |
 
 ## See Also

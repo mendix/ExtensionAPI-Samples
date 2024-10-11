@@ -3,18 +3,17 @@
 Try to import a mpk file as a module to the app. If the module with the same name exists, user will get a dialog asking to replace it or to rename the importing module.
 
 ```csharp
-public bool TryImportModule(IModel model, string moduleMpkPath, string appId, string versionId, 
-    string version, int packageId)
+public bool TryImportModule(IModel model, string moduleMpkPath, string versionId, string version, 
+    int packageId)
 ```
 
 | parameter | description |
 | --- | --- |
 | model | Reference to the current model. |
-| moduleMpkPath | Path to the mpk that should be imported. |
-| appId |  |
-| versionId |  |
-| version |  |
-| packageId |  |
+| moduleMpkPath | Path to the .mpk file of the module to be imported. |
+| versionId | The unique id of a specific version of the module package to be imported |
+| version | The version number of the module package to be imported |
+| packageId | The id of the module to be imported |
 
 ## Return Value
 

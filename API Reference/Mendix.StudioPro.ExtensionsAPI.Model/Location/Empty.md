@@ -1,9 +1,9 @@
-# Location.Empty field
+# Location.Empty property
 
-Create a location object with a set of default coordinates.
+Create a [`Location`](../Location.md) object with a set of default coordinates.
 
 ```csharp
-public static Location Empty;
+public static Location Empty { get; }
 ```
 
 ## See Also
