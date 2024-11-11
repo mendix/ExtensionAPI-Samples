@@ -6,6 +6,10 @@ Gets or sets the URI of the top level document of the web view. Setting this pro
 public Uri Address { get; set; }
 ```
 
+## Remarks
+
+Please visit the [Known Issues](https://docs.mendix.com/apidocs-mxsdk/apidocs/extensibility-api/introductions/web-views/#known-issues) section of our online docs to make sure you avoid all known issues related to paths and navigation.
+
 ## See Also
 
 * interface [IWebView](../IWebView.md)

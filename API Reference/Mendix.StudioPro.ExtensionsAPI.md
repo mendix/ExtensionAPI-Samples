@@ -354,6 +354,7 @@
 | interface [IMessageBoxService](./Mendix.StudioPro.ExtensionsAPI.UI.Services/IMessageBoxService.md) | Provides a set of methods to show Error, Info or Warning message boxes. |
 | interface [IMicroflowExpressionEditorService](./Mendix.StudioPro.ExtensionsAPI.UI.Services/IMicroflowExpressionEditorService.md) | Provides operations to create or edit a [`IMicroflowExpression`](./Mendix.StudioPro.ExtensionsAPI.Model.MicroflowExpressions/IMicroflowExpression.md). |
 | interface [INotificationPopupService](./Mendix.StudioPro.ExtensionsAPI.UI.Services/INotificationPopupService.md) | The Studio Pro Notification Service helps you show natively styled theme-aware notifications |
+| interface [IRuntimeService](./Mendix.StudioPro.ExtensionsAPI.UI.Services/IRuntimeService.md) | Provides access to the app running locally. |
 | interface [ISelectorDialogService](./Mendix.StudioPro.ExtensionsAPI.UI.Services/ISelectorDialogService.md) | Provides a set of operations for showing the object (that is [`unit`](./Mendix.StudioPro.ExtensionsAPI.Model/IAbstractUnit.md) or [`element`](./Mendix.StudioPro.ExtensionsAPI.Model/IElement.md)) selection interface to Studio Pro user. |
 | interface [IVersionControlService](./Mendix.StudioPro.ExtensionsAPI.UI.Services/IVersionControlService.md) |  |
 | abstract class [SelectorDialogOptions&lt;TStructure,TContainerStructure&gt;](./Mendix.StudioPro.ExtensionsAPI.UI.Services/SelectorDialogOptions-2.md) | Options class for describing the behavior of a selector dialog in Studio Pro. |
