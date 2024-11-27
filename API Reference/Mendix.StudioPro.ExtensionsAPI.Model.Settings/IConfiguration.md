@@ -8,6 +8,7 @@ public interface IConfiguration : IElement
 
 | name | description |
 | --- | --- |
+| [ApplicationRootUrl](IConfiguration/ApplicationRootUrl.md) { get; set; } |  |
 | [Name](IConfiguration/Name.md) { get; set; } |  |
 | [AddConstantValue](IConfiguration/AddConstantValue.md)(…) |  |
 | [AddCustomSetting](IConfiguration/AddCustomSetting.md)(…) |  |
