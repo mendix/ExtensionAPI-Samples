@@ -11,6 +11,7 @@ public class StudioProImage
 | name | description |
 | --- | --- |
 | [StudioProImage](StudioProImage/StudioProImage.md)(…) | Creates a Studio Pro image from a file. (2 constructors) |
+| static [FromResource](StudioProImage/FromResource.md)(…) |  |
 
 ## See Also
 
