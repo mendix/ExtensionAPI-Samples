@@ -3,7 +3,7 @@
 The ID of the module in the Marketplace.
 
 ```csharp
-public string AppStorePackageId { get; set; }
+public int AppStorePackageId { get; set; }
 ```
 
 ## Remarks
