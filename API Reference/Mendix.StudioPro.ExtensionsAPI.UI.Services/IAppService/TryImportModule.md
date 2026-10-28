@@ -4,7 +4,7 @@ Try to import a mpk file as a module to the app. If the module with the same nam
 
 ```csharp
 public bool TryImportModule(IModel model, string moduleMpkPath, string versionId, string version, 
-    int packageId)
+    string packageId)
 ```
 
 | parameter | description |

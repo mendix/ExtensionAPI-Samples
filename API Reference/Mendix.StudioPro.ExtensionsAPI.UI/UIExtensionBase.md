@@ -6,6 +6,12 @@ Base class for all extensions providing custom UI. Do not inherit from this clas
 public abstract class UIExtensionBase : ExtensionBase
 ```
 
+## Public Members
+
+| name | description |
+| --- | --- |
+| event [OnWebServerBaseUrlChanged](UIExtensionBase/OnWebServerBaseUrlChanged.md) |  |
+
 ## Protected Members
 
 | name | description |
