@@ -312,6 +312,7 @@
 | abstract class [DockablePaneExtension](./Mendix.StudioPro.ExtensionsAPI.UI.DockablePane/DockablePaneExtension.md) | Base class for an extension that introduces new [dockable pane](https://docs.mendix.com/refguide/studio-pro-overview/#5-dockable-panes). |
 | enum [DockablePanePosition](./Mendix.StudioPro.ExtensionsAPI.UI.DockablePane/DockablePanePosition.md) |  |
 | abstract class [DockablePaneViewModelBase](./Mendix.StudioPro.ExtensionsAPI.UI.DockablePane/DockablePaneViewModelBase.md) |  |
+| interface [ISupportsMarketplaceDeepLink](./Mendix.StudioPro.ExtensionsAPI.UI.DockablePane/ISupportsMarketplaceDeepLink.md) |  |
 | abstract class [WebViewDockablePaneViewModel](./Mendix.StudioPro.ExtensionsAPI.UI.DockablePane/WebViewDockablePaneViewModel.md) | Representation of a [dockable pane](https://docs.mendix.com/refguide/studio-pro-overview/#5-dockable-panes) in Studio Pro. This dockable pane is meant to contain a [`IWebView`](./Mendix.StudioPro.ExtensionsAPI.UI.WebView/IWebView.md). |
 
 ## Mendix.StudioPro.ExtensionsAPI.UI.Events namespace
